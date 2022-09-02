@@ -7,7 +7,14 @@ toc: true
 
 <!-- {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %} -->
 
-<!-- {% toc %} -->
+<div>
+  <div id="table-of-contents">
+
+  </div>
+  <div id="markdown-content">
+    {{ content }}
+  </div>
+</div>
 
 # Generalization and Gradient Descent
 
