@@ -4,6 +4,8 @@ title: Generalization and Gradient Descent
 mathjax: true
 ---
 
+{% include toc.html html=content %}
+
 # Generalization and Gradient Descent
 {: .no_toc }
 
