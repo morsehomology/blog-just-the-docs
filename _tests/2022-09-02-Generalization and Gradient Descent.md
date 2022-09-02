@@ -4,7 +4,7 @@ title: Generalization and Gradient Descent
 mathjax: true
 ---
 
-{% include toc.html html=content %}
+{% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
 
 # Generalization and Gradient Descent
 {: .no_toc }
