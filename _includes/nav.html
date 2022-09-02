@@ -6,6 +6,8 @@
     {%- assign titled_pages = include.pages
         | where_exp:"item", "item.title != nil" -%}
 
+        {% toc %}
+
   {%- comment -%}
     The values of `title` and `nav_order` can be numbers or strings.
     Jekyll gives build failures when sorting on mixtures of different types,
@@ -65,7 +67,6 @@
     {%- if node.parent == nil -%}
       {%- unless node.nav_exclude -%}
 
-      {% toc %}
 
       <li class="nav-list-item{% if page.collection == include.key and page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
         {%- if node.has_children -%}
