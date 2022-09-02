@@ -9,7 +9,7 @@ toc: true
 
 # Generalization and Gradient Descent
 
-{: .no_toc }
+<!-- {: .no_toc }
 
 <details open markdown="block">
   <summary>
@@ -18,7 +18,7 @@ toc: true
   {: .text-delta }
 1. TOC
 {:toc}
-</details>
+</details> -->
 
 ---
 
