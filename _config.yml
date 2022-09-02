@@ -46,13 +46,13 @@ just_the_docs:
         # Reference the "tests" collection
         tests:
             # Give the collection a name
-            name: Tests
+            name: Notes
             # Exclude the collection from the navigation
             # Supports true or false (default)
             # nav_exclude: true
             # Fold the collection in the navigation
             # Supports true or false (default)
-            nav_fold: true
+            nav_fold: false
             # Exclude the collection from the search
             # Supports true or false (default)
             # search_exclude: true

@@ -1,12 +1,6 @@
-<!-- {% include toc.html ordered=true html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %} -->
-
-<!-- {% toc %} -->
-
 <ul class="nav-list">
     {%- assign titled_pages = include.pages
         | where_exp:"item", "item.title != nil" -%}
-
-
 
   {%- comment -%}
     The values of `title` and `nav_order` can be numbers or strings.
