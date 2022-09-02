@@ -1,7 +1,3 @@
-/**************************************
- * Header Counters in Content
- **************************************/
-
 /** initialize css counter */
 #write {
     counter-reset: h1;
@@ -37,10 +33,9 @@ h5 {
     counter-increment: h2;
     content: counter(h1) "." counter(h2) ". ";
 }
-
+/** override the default style for focused headings */
 #write h3:before,
 h3.md-focus.md-heading:before {
-    /*override the default style for focused headings */
     counter-increment: h3;
     content: counter(h1) "." counter(h2) "." counter(h3) ". ";
 }
