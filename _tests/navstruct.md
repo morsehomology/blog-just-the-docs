@@ -4,7 +4,6 @@ title: Navigation Structure
 ---
 
 # Navigation Structure
-
 {: .no_toc }
 
 <details open markdown="block">
