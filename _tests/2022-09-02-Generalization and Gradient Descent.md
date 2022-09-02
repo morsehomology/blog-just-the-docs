@@ -1,12 +1,23 @@
 ---
-layout: post
+layout: default
 title: Generalization and Gradient Descent
-date: 2022-08-08 11:33:00 +0800
-categories: jekyll update
 mathjax: true
 ---
 
 # Generalization and Gradient Descent
+
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+---
 
 ## "Bias Variance" exposition
 

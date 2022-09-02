@@ -1,9 +1,20 @@
 ---
-layout: post
+layout: default
 title: Generalization and Gradient Descent
 date: 2022-08-08 11:33:00 +0800
 categories: jekyll update
 ---
+
+# Navigation Structure
+
+{: .no_toc }
+
+## Table of contents
+
+{: .no_toc .text-delta }
+
+1. TOC
+2. {:toc}
 
 # "Bias Variance" exposition
 
