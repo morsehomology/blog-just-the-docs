@@ -6,7 +6,7 @@
     {%- assign titled_pages = include.pages
         | where_exp:"item", "item.title != nil" -%}
 
-        {% toc %}
+
 
   {%- comment -%}
     The values of `title` and `nav_order` can be numbers or strings.
