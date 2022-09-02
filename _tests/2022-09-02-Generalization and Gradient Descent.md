@@ -5,7 +5,6 @@ mathjax: true
 ---
 
 # Generalization and Gradient Descent
-
 {: .no_toc }
 
 <details open markdown="block">
