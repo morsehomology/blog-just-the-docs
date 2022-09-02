@@ -55,6 +55,11 @@ layout: table_wrappers
           | where_exp:"item", "item.nav_exclude != true"
           | size %}
       {% if pages_top_size > 0 %}
+
+      <!-- {% toc %} -->
+      {% include toc.html ordered=true html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
+
+
         {% include nav.html pages=site.html_pages key=nil %}
       {% endif %}
       {% if site.just_the_docs.collections %}
