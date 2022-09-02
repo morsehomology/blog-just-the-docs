@@ -64,6 +64,9 @@
   {%- for node in pages_list -%}
     {%- if node.parent == nil -%}
       {%- unless node.nav_exclude -%}
+
+      {% toc %}
+
       <li class="nav-list-item{% if page.collection == include.key and page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
         {%- if node.has_children -%}
           <a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a>
@@ -120,6 +123,7 @@
 </ul>
 
 {%- if page.collection == include.key -%}
+
 
   {%- for node in pages_list -%}
     {%- if node.parent == nil -%}
