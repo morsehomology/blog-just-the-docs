@@ -8,7 +8,7 @@ github_username: morsehomology
 # Build settings
 # theme: minima
 theme: "just-the-docs"
-remote_theme: just-the-docs/just-the-docs
+# remote_theme: just-the-docs/just-the-docs
 plugins:
     - jekyll-feed
     - jekyll-toc
