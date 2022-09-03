@@ -105,5 +105,9 @@
   }
 
   .inline_toc a {
-    color: rgb(77, 74, 74) !important;
+    // color: rgb(0, 0, 0) !important;
+  }
+
+  .inline_toc ol {
+    color: rgb(0, 0, 0) !important;
   }
