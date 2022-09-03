@@ -20,16 +20,16 @@ title: Blog
 description: Blog for notes
 email: sam.lewallen@gmail.com
 # github_username: morsehomology
-baseurl: "/blog-just-the-docs"
-url: "https://morsehomology.github.io"
-permalink: pretty
+# baseurl: "/blog-just-the-docs"
+# url: "https://morsehomology.github.io"
+# permalink: pretty
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
 
 # Enable or disable the site search
 # Supports true (default) or false
-search_enabled: true
+search_enabled: false
 search:
     # Split pages into sections that can be searched individually
     # Supports 1 - 6, default: 2
@@ -58,6 +58,7 @@ search:
 plugins:
     - jekyll-feed
     - jekyll-toc
+    - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -84,8 +85,8 @@ back_to_top: true
 back_to_top_text: "Back to top"
 
 # Footer last edited timestamp
-last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
-last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+# last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+# last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
 # Define Jekyll collections
 collections:
