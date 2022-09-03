@@ -1,11 +1,11 @@
 title: Blog
 email: sam.lewallen@gmail.com
 description: Blog
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# https://morsehomology.github.io/blog-just-the-docs
+baseurl: "/blog-just-the-docs" # the subpath of your site, e.g. /blog
+url: "https://morsehomology.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: morsehomology
 # Build settings
-# theme: minima
 theme: "just-the-docs"
 remote_theme: just-the-docs/just-the-docs
 plugins:
