@@ -14,6 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+remote_theme: just-the-docs/just-the-docs
+
 title: Blog
 description: Blog for notes
 email: sam.lewallen@gmail.com
