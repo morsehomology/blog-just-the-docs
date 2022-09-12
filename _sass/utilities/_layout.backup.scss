@@ -104,11 +104,39 @@
     vertical-align: top !important;
 }
 
+// .my_toc.inline_toc {
+//     color: black !important;
+//     font-size: 10px !important;
+// }
+
+//   .inline_toc a {
+//     // color: rgb(135, 127, 127) !important;
+//     font-size: 10px !important;
+// }
+
+//   .inline_toc ol {
+//     color: rgb(0, 0, 0) !important;
+//     font-size: 10px !important;
+// }
+
 .inline_toc {
-    // font-size: 13px !important;
-    font-size: 90% !important;
-    // line-height: 150% !important;
+    // font-size: 12px !important;
+    // color: black !important;
+    // display: inline-block !important;
+    // border: solid;
+    // border-width: 1px !important;
+    // border-color: rgba(0, 0, 0, 0.437);
+    // padding-left: 2.2em !important;
+    // padding-right: 2.5em !important;
+    // padding-top: 1em !important;
+    // padding-bottom: 1em !important;
+    // margin-left: 1em;
+    // margin-right: .5em;
+    // font-family: monospace;
+    font-size: 13px !important;
+    line-height: 150% !important;
     color: black !important;
+    // font-family: monospace;
 }
 
 .inline_toc ol {
@@ -129,8 +157,4 @@
     font-size: 45px;
     padding-bottom: 0.5em;
     line-height: 110%;
-}
-
-.toc_title {
-    // text-decoration: underline;
 }
