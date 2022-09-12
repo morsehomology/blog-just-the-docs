@@ -999,7 +999,7 @@ code.language-mermaid { padding: 0; background-color: inherit; border: 0; }
 /* -------------------------------------------------------------------------- */
 /*                            TABLE OF CONTENTS TOC                           */
 /* -------------------------------------------------------------------------- */
-.inline_toc { color: black !important; list-style-type: none; }
+.inline_toc { color: black !important; list-style-type: none; padding-left: 5px !important; }
 
 .inline_toc ol { color: black !important; }
 
