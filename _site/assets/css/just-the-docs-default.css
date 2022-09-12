@@ -1013,7 +1013,7 @@ code.language-mermaid { padding: 0; background-color: inherit; border: 0; }
 
 .inline_toc ul { color: black !important; list-style-type: none; }
 
-.inline_toc a { color: #d44141 !important; font-size: 80% !important; font-family: monospace; }
+.inline_toc a { color: #d44141 !important; font-size: 90% !important; }
 
 /* -------------------------------------------------------------------------- */
 /*                                    TITLE                                   */
