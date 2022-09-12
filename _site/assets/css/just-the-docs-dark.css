@@ -996,12 +996,18 @@ code.language-mermaid { padding: 0; background-color: inherit; border: 0; }
 
 .v-align-top { vertical-align: top !important; }
 
-.inline_toc { font-size: 90% !important; color: black !important; }
+/* -------------------------------------------------------------------------- */
+/*                            TABLE OF CONTENTS TOC                           */
+/* -------------------------------------------------------------------------- */
+.inline_toc { color: black !important; }
 
 .inline_toc ol { color: black !important; }
 
 .inline_toc a { color: #d838a2 !important; }
 
+/* -------------------------------------------------------------------------- */
+/*                                    TITLE                                   */
+/* -------------------------------------------------------------------------- */
 .t { color: black; text-decoration: underline; text-decoration-thickness: 0.07em; text-underline-offset: 5%; font-size: 45px; padding-bottom: 0.5em; line-height: 110%; }
 
 .fs-1 { font-size: 9px !important; }

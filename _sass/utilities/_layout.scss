@@ -104,9 +104,13 @@
     vertical-align: top !important;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                            TABLE OF CONTENTS TOC                           */
+/* -------------------------------------------------------------------------- */
+
 .inline_toc {
     // font-size: 13px !important;
-    font-size: 90% !important;
+    // font-size: 90% !important;
     // line-height: 150% !important;
     color: black !important;
 }
@@ -121,6 +125,9 @@
     // font-family: monospace;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                    TITLE                                   */
+/* -------------------------------------------------------------------------- */
 .t {
     color: black;
     text-decoration: underline;
