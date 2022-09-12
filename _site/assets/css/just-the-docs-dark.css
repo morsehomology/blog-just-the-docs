@@ -1003,6 +1003,8 @@ code.language-mermaid { padding: 0; background-color: inherit; border: 0; }
 
 .inline_toc ol { color: black !important; }
 
+.inline_toc a { font-size: 80% !important; font-family: monospace; }
+
 /* -------------------------------------------------------------------------- */
 /*                                    TITLE                                   */
 /* -------------------------------------------------------------------------- */
