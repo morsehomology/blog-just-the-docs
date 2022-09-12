@@ -34,16 +34,16 @@ plugins:
 
 # Define Jekyll collections
 collections:
-    # Define a collection named "tests", its documents reside in the "_tests" directory
-    tests:
+    # Define a collection named "notes", its documents reside in the "_notes" directory
+    notes:
         permalink: "/:collection/:path/"
         output: true
 
 just_the_docs:
     # Define which collections are used in just-the-docs
     collections:
-        # Reference the "tests" collection
-        tests:
+        # Reference the "notes" collection
+        notes:
             # Give the collection a name
             name: Notes
             # Exclude the collection from the navigation

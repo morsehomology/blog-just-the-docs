@@ -3,111 +3,148 @@
 // Display
 
 .d-block {
-  display: block !important;
+    display: block !important;
 }
 
 .d-flex {
-  display: flex !important;
+    display: flex !important;
 }
 
 .d-inline {
-  display: inline !important;
+    display: inline !important;
 }
 
 .d-inline-block {
-  display: inline-block !important;
+    display: inline-block !important;
 }
 
 .d-none {
-  display: none !important;
+    display: none !important;
 }
 
 @each $media-query in map-keys($media-queries) {
-  @for $i from 1 through length($spacers) {
-    @include mq($media-query) {
-      $size: #{map-get($spacers, sp-#{$i - 1})};
-      $scale: #{$i - 1};
+    @for $i from 1 through length($spacers) {
+        @include mq($media-query) {
+            $size: #{map-get($spacers, sp-#{$i - 1})};
+            $scale: #{$i - 1};
 
-      // .d-sm-block, .d-md-none, .d-lg-inline
-      .d-#{$media-query}-block {
-        display: block !important;
-      }
-      .d-#{$media-query}-flex {
-        display: flex !important;
-      }
-      .d-#{$media-query}-inline {
-        display: inline !important;
-      }
-      .d-#{$media-query}-inline-block {
-        display: inline-block !important;
-      }
-      .d-#{$media-query}-none {
-        display: none !important;
-      }
+            // .d-sm-block, .d-md-none, .d-lg-inline
+            .d-#{$media-query}-block {
+                display: block !important;
+            }
+
+            .d-#{$media-query}-flex {
+                display: flex !important;
+            }
+
+            .d-#{$media-query}-inline {
+                display: inline !important;
+            }
+
+            .d-#{$media-query}-inline-block {
+                display: inline-block !important;
+            }
+
+            .d-#{$media-query}-none {
+                display: none !important;
+            }
+        }
     }
-  }
 }
 
 // Horizontal alignment
 
 .float-left {
-  float: left !important;
+    float: left !important;
 }
 
 .float-right {
-  float: right !important;
+    float: right !important;
 }
 
 .flex-justify-start {
-  justify-content: flex-start !important;
+    justify-content: flex-start !important;
 }
 
 .flex-justify-end {
-  justify-content: flex-end !important;
+    justify-content: flex-end !important;
 }
 
 .flex-justify-between {
-  justify-content: space-between !important;
+    justify-content: space-between !important;
 }
 
 .flex-justify-around {
-  justify-content: space-around !important;
+    justify-content: space-around !important;
 }
 
 // Vertical alignment
 
 .v-align-baseline {
-  vertical-align: baseline !important;
+    vertical-align: baseline !important;
 }
 
 .v-align-bottom {
-  vertical-align: bottom !important;
+    vertical-align: bottom !important;
 }
 
 .v-align-middle {
-  vertical-align: middle !important;
+    vertical-align: middle !important;
 }
 
 .v-align-text-bottom {
-  vertical-align: text-bottom !important;
+    vertical-align: text-bottom !important;
 }
 
 .v-align-text-top {
-  vertical-align: text-top !important;
+    vertical-align: text-top !important;
 }
 
 .v-align-top {
-  vertical-align: top !important;
+    vertical-align: top !important;
 }
 
-.my_toc.inline_toc {
+// .my_toc.inline_toc {
+//     color: black !important;
+//     font-size: 10px !important;
+// }
+
+//   .inline_toc a {
+//     // color: rgb(135, 127, 127) !important;
+//     font-size: 10px !important;
+// }
+
+//   .inline_toc ol {
+//     color: rgb(0, 0, 0) !important;
+//     font-size: 10px !important;
+// }
+
+.inline_toc {
+    // font-size: 12px !important;
+    // color: black !important;
+    // display: inline-block !important;
+    // border: solid;
+    // border-width: 1px !important;
+    // border-color: rgba(0, 0, 0, 0.437);
+    // padding-left: 2.2em !important;
+    // padding-right: 2.5em !important;
+    // padding-top: 1em !important;
+    // padding-bottom: 1em !important;
+    // margin-left: 1em;
+    // margin-right: .5em;
+    // font-family: monospace;
+    font-size: 13px !important;
+    line-height: 150% !important;
     color: black !important;
-  }
+    // font-family: monospace;
+}
 
-  .inline_toc a {
-    // color: rgb(0, 0, 0) !important;
-  }
+.inline_toc ol {
+    color: black !important;
+    // font-family: monospace;
+}
 
-  .inline_toc ol {
-    color: rgb(0, 0, 0) !important;
-  }
+.inline_toc a {
+    color: rgb(216, 56, 162) !important;
+    // font-family: monospace;
+}

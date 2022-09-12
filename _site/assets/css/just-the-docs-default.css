@@ -1004,9 +1004,11 @@ code.language-mermaid { padding: 0; background-color: inherit; border: 0; }
 
 .v-align-top { vertical-align: top !important; }
 
-.my_toc.inline_toc { color: black !important; }
+.inline_toc { font-size: 13px !important; line-height: 150% !important; color: black !important; }
 
 .inline_toc ol { color: black !important; }
+
+.inline_toc a { color: #d838a2 !important; }
 
 .fs-1 { font-size: 9px !important; }
 
