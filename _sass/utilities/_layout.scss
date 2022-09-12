@@ -113,11 +113,18 @@
     // font-size: 90% !important;
     // line-height: 150% !important;
     color: black !important;
+    list-style-type: none;
 }
 
 .inline_toc ol {
     color: black !important;
     // font-family: monospace;
+}
+
+.inline_toc ul {
+    color: black !important;
+    // font-family: monospace;
+    list-style-type: none;
 }
 
 .inline_toc a {
