@@ -80,7 +80,7 @@ layout: table_wrappers
                 {% include nav.html pages=collection key=collection_key %}
               {% endif %}
             {% else %}
-                {% include toc.html ordered=true html=content class=mytoc sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
+                {% include toc.html ordered=false html=content class=mytoc sanitize=true class="inline_toc" id="my_toc" h_min=1 h_max=3 %}
                 <hr>
                 {% include nav.html pages=collection key=collection_key %}
             {% endif %}

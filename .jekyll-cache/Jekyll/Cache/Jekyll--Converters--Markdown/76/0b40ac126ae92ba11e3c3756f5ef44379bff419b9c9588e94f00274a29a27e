@@ -1,0 +1,61 @@
+I"�
+<!--  -->
+
+<div class="t">Generalization and Gradient Descent</div>
+
+<details open="" class="no_toc">
+  <summary class="text-delta">
+    Table of contents
+  </summary>
+<ol id="markdown-toc">
+  <li><a href="#11-bias-variance-exposition" id="markdown-toc-11-bias-variance-exposition">1.1. “Bias Variance” exposition</a>    <ol>
+      <li><a href="#111-versionattempt-1" id="markdown-toc-111-versionattempt-1">1.1.1. Version/Attempt 1</a></li>
+    </ol>
+  </li>
+  <li><a href="#12-from-ben-recht-slides" id="markdown-toc-12-from-ben-recht-slides">1.2. From Ben Recht slides</a></li>
+</ol>
+
+</details>
+
+<hr />
+
+<h2 id="11-bias-variance-exposition">1.1. “Bias Variance” exposition</h2>
+
+<p>Daniela Witten says the tradeoff is related to the equation</p>
+
+\[\text{Exp. Pred. Error }=\text{ Irreducible Error + Bias}^2+ \text{Var}\]
+
+<p>There will be different frameworks for this, we’re going to try to start with as little structure as possible if we can.</p>
+
+<h3 id="111-versionattempt-1">1.1.1. Version/Attempt 1</h3>
+
+<p>(I have reasons to think this version can’t be correct, doesn’t have some features of the problem which seemed essential. We want to see that though).</p>
+
+<p>Have a space $X$ and the data is determined by a distribution $\rho$ on $X$. A model (fit) is another distribution $\rho’$ on $X$. For now we meed to assume that $X$ has a fixed metric $d$ and furthermore that means/centers of mass are defined for $\rho$ and $\rho’$, call these $x_{\rho}$ and $x_{\rho’}$ in $X$.</p>
+
+<p>(They should be defined by minimizing $E_{\rho}[d(x_{\rho}, x)]$ over all of $X$, and likewise for $\rho’$).</p>
+
+<p>The variance of</p>
+
+<h2 id="12-from-ben-recht-slides">1.2. From Ben Recht slides</h2>
+
+<p><strong>Given</strong>: i.i.d. sample \(S=\left\{z_1, \ldots, z_n\right\}\) from distribution $D$<br />
+<strong>Goal</strong>: Find a good predictor function $f$<br />
+Population risk (test error): \(R[f]=\mathbb{E}_z \operatorname{loss}(f ; z)\) Unknown!<br />
+Empirical risk (training error): \(R_s[f]=\frac{1}{n} \sum_{i=1}^n \operatorname{loss}\left(f ; z_i\right)\) Minimize using SGD!<br />
+Generalization error: $R[f]-R_s[f]$</p>
+
+<p>How much empirical risk underestimates population risk</p>
+
+<p>We can compute $R_s \ldots$:</p>
+
+<p>“Fundamental theorem of ML:”</p>
+
+\[R[f]=\left(R[f]-R_S[f]\right)+R_S[f]\]
+
+<p>population generalization training - small training error implies risk ± generalization error - zero training error does not imply overfitting \(\begin{aligned}
+R[f] &amp;=\left(R[f]-R\left[f_{\mathcal{H}}\right]\right) \\
+&amp;+\left(R\left[f_{\mathcal{H}}\right]-R\left[f_{\star}\right]\right) \\
+&amp;+R\left[f_{\star}\right]
+\end{aligned}\)</p>
+:ET

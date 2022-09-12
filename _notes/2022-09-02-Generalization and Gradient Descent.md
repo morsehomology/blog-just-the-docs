@@ -7,9 +7,7 @@ toc: true
 
 <!-- {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %} -->
 
-# Generalization and Gradient Descent
-
-{: .no_toc }
+<div class="t">Generalization and Gradient Descent</div>
 
 <details open markdown="block">
   <summary>
@@ -22,7 +20,7 @@ toc: true
 
 ---
 
-## "Bias Variance" exposition
+# 1. "Bias Variance" exposition
 
 Daniela Witten says the tradeoff is related to the equation
 
@@ -30,7 +28,7 @@ $$\text{Exp. Pred. Error }=\text{ Irreducible Error + Bias}^2+ \text{Var}$$
 
 There will be different frameworks for this, we're going to try to start with as little structure as possible if we can.
 
-### Version/Attempt 1
+## 1.1. Version/Attempt 1
 
 (I have reasons to think this version can't be correct, doesn't have some features of the problem which seemed essential. We want to see that though).
 
@@ -40,7 +38,7 @@ Have a space $X$ and the data is determined by a distribution $\rho$ on $X$. A m
 
 The variance of
 
-## From Ben Recht slides
+# 2. From Ben Recht slides
 
 **Given**: i.i.d. sample $$S=\left\{z_1, \ldots, z_n\right\}$$ from distribution $D$\
 **Goal**: Find a good predictor function $f$\

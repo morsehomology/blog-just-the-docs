@@ -1002,6 +1002,8 @@ code.language-mermaid { padding: 0; background-color: inherit; border: 0; }
 
 .inline_toc a { color: #d838a2 !important; }
 
+.t { color: black; text-decoration: underline; text-decoration-thickness: 0.07em; text-underline-offset: 5%; font-size: 45px; padding-bottom: 0.5em; line-height: 110%; }
+
 .fs-1 { font-size: 9px !important; }
 
 @media (min-width: 31.25rem) { .fs-1 { font-size: 10px !important; } }

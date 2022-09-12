@@ -80,9 +80,9 @@
       </a>
     </div>
     <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
-                <ol class="inline_toc" id="my_toc"><li><a href="#bias-variance-exposition">“Bias Variance” exposition</a><ol><li><a href="#versionattempt-1">Version/Attempt 1</a></li></ol></li><li><a href="#from-ben-recht-slides">From Ben Recht slides</a></li></ol>
+                <ul class="inline_toc" id="my_toc"><li><a href="#1-bias-variance-exposition">1. “Bias Variance” exposition</a><ul><li><a href="#11-versionattempt-1">1.1. Version/Attempt 1</a></li></ul></li><li><a href="#2-from-ben-recht-slides">2. From Ben Recht slides</a></li></ul>
                 <hr>
-                <ul class="nav-list"><li class="nav-list-item active"><a href="/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/" class="nav-list-link active">Generalization and Gradient Descent</a></li><li class="nav-list-item"><a href="/blog-just-the-docs/notes/navstruct/" class="nav-list-link">Navigation Structure</a></li><li class="nav-list-item"><a href="/blog-just-the-docs/notes/2022-09-12-transformers/" class="nav-list-link">Transformers and HPC</a></li><li class="nav-list-item"><a href="/blog-just-the-docs/notes/2022-09-02-welcome-to-jekyll/" class="nav-list-link">Welcome to Jekyll!</a></li></ul>
+                <ul class="nav-list"><li class="nav-list-item active"><a href="/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/" class="nav-list-link active">Generalization and Gradient Descent</a></li><li class="nav-list-item"><a href="/blog-just-the-docs/notes/2022-09-12-Transformers/" class="nav-list-link">Transformers and HPC</a></li></ul>
     </nav>
       <footer class="site-footer">
         This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
@@ -101,40 +101,35 @@
     <div id="main-content-wrap" class="main-content-wrap">
       <div id="main-content" class="main-content" role="main">
           <!--  -->
-      <h1 id="generalization-and-gradient-descent">
-          <a href="#generalization-and-gradient-descent" class="anchor-heading" aria-labelledby="generalization-and-gradient-descent"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Generalization and Gradient Descent
-      </h1>
-<details open="" class="no_toc">
+<div class="t">Generalization and Gradient Descent</div>
+<details open="">
   <summary class="text-delta">
     Table of contents
   </summary>
 <ol id="markdown-toc">
-  <li><a href="#generalization-and-gradient-descent" id="markdown-toc-generalization-and-gradient-descent">Generalization and Gradient Descent</a>    <ol>
-      <li><a href="#bias-variance-exposition" id="markdown-toc-bias-variance-exposition">“Bias Variance” exposition</a>        <ol>
-          <li><a href="#versionattempt-1" id="markdown-toc-versionattempt-1">Version/Attempt 1</a></li>
-        </ol>
-      </li>
-      <li><a href="#from-ben-recht-slides" id="markdown-toc-from-ben-recht-slides">From Ben Recht slides</a></li>
+  <li><a href="#1-bias-variance-exposition" id="markdown-toc-1-bias-variance-exposition">1. “Bias Variance” exposition</a>    <ol>
+      <li><a href="#11-versionattempt-1" id="markdown-toc-11-versionattempt-1">1.1. Version/Attempt 1</a></li>
     </ol>
   </li>
+  <li><a href="#2-from-ben-recht-slides" id="markdown-toc-2-from-ben-recht-slides">2. From Ben Recht slides</a></li>
 </ol>
 </details><hr />
-      <h2 id="bias-variance-exposition">
-          <a href="#bias-variance-exposition" class="anchor-heading" aria-labelledby="bias-variance-exposition"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> “Bias Variance” exposition
-      </h2>
+      <h1 id="1-bias-variance-exposition">
+          <a href="#1-bias-variance-exposition" class="anchor-heading" aria-labelledby="1-bias-variance-exposition"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. “Bias Variance” exposition
+      </h1>
 <p>Daniela Witten says the tradeoff is related to the equation</p>
 \[\text{Exp. Pred. Error }=\text{ Irreducible Error + Bias}^2+ \text{Var}\]
 <p>There will be different frameworks for this, we’re going to try to start with as little structure as possible if we can.</p>
-      <h3 id="versionattempt-1">
-          <a href="#versionattempt-1" class="anchor-heading" aria-labelledby="versionattempt-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Version/Attempt 1
-      </h3>
+      <h2 id="11-versionattempt-1">
+          <a href="#11-versionattempt-1" class="anchor-heading" aria-labelledby="11-versionattempt-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1.1. Version/Attempt 1
+      </h2>
 <p>(I have reasons to think this version can’t be correct, doesn’t have some features of the problem which seemed essential. We want to see that though).</p>
 <p>Have a space $X$ and the data is determined by a distribution $\rho$ on $X$. A model (fit) is another distribution $\rho’$ on $X$. For now we meed to assume that $X$ has a fixed metric $d$ and furthermore that means/centers of mass are defined for $\rho$ and $\rho’$, call these $x_{\rho}$ and $x_{\rho’}$ in $X$.</p>
 <p>(They should be defined by minimizing $E_{\rho}[d(x_{\rho}, x)]$ over all of $X$, and likewise for $\rho’$).</p>
 <p>The variance of</p>
-      <h2 id="from-ben-recht-slides">
-          <a href="#from-ben-recht-slides" class="anchor-heading" aria-labelledby="from-ben-recht-slides"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> From Ben Recht slides
-      </h2>
+      <h1 id="2-from-ben-recht-slides">
+          <a href="#2-from-ben-recht-slides" class="anchor-heading" aria-labelledby="2-from-ben-recht-slides"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. From Ben Recht slides
+      </h1>
 <p><strong>Given</strong>: i.i.d. sample \(S=\left\{z_1, \ldots, z_n\right\}\) from distribution $D$<br />
 <strong>Goal</strong>: Find a good predictor function $f$<br />
 Population risk (test error): \(R[f]=\mathbb{E}_z \operatorname{loss}(f ; z)\) Unknown!<br />

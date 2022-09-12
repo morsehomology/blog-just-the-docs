@@ -15,17 +15,17 @@
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Transformers and HPC" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="1. Presentation Outline 1.1. Background on Transformers 1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1) 1.1.2. Useful info 1.1.2.1. Softmax 1.2. Workflow for AAYN model 1.3. Transformer architectures 1.4. Comments" />
-<meta property="og:description" content="1. Presentation Outline 1.1. Background on Transformers 1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1) 1.1.2. Useful info 1.1.2.1. Softmax 1.2. Workflow for AAYN model 1.3. Transformer architectures 1.4. Comments" />
-<link rel="canonical" href="http://localhost:4000/blog-just-the-docs/notes/2022-09-12-transformers/" />
-<meta property="og:url" content="http://localhost:4000/blog-just-the-docs/notes/2022-09-12-transformers/" />
+<meta name="description" content="Transformers and HPC" />
+<meta property="og:description" content="Transformers and HPC" />
+<link rel="canonical" href="http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/" />
+<meta property="og:url" content="http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/" />
 <meta property="og:site_name" content="Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-09-12T03:24:42+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Transformers and HPC" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-12T03:24:42+01:00","datePublished":"2022-09-12T03:24:42+01:00","description":"1. Presentation Outline 1.1. Background on Transformers 1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1) 1.1.2. Useful info 1.1.2.1. Softmax 1.2. Workflow for AAYN model 1.3. Transformer architectures 1.4. Comments","headline":"Transformers and HPC","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog-just-the-docs/notes/2022-09-12-transformers/"},"url":"http://localhost:4000/blog-just-the-docs/notes/2022-09-12-transformers/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-12T03:24:42+01:00","datePublished":"2022-09-12T03:24:42+01:00","description":"Transformers and HPC","headline":"Transformers and HPC","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/"},"url":"http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/"}</script>
 <!-- End Jekyll SEO tag -->
     <script type='text/x-mathjax-config'>
         MathJax.Hub.Config({ tex2jax: { inlineMath: [ ["$","$"], ["\\(","\\)"] ], processEscapes: true }});
@@ -80,9 +80,9 @@
       </a>
     </div>
     <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
-                <ol class="inline_toc" id="my_toc"><li><a href="#11-background-on-transformers">1.1. Background on Transformers</a><ol><li><a href="#111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1">1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)</a></li><li><a href="#112-useful-info">1.1.2. Useful info</a></li></ol></li><li><a href="#12-workflow-for-aayn-model">1.2. Workflow for AAYN model</a></li><li><a href="#13-transformer-architectures">1.3. Transformer architectures</a></li><li><a href="#14-comments">1.4. Comments</a></li></ol>
+                <ul class="inline_toc" id="my_toc"><li><a href="#1-presentation-outline">1. Presentation Outline</a><ul><li><a href="#11-background-on-transformers">1.1. Background on Transformers</a><ul><li><a href="#111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1">1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)</a></li><li><a href="#112-useful-info">1.1.2. Useful info</a></li></ul></li><li><a href="#12-workflow-for-aayn-model">1.2. Workflow for AAYN model</a></li><li><a href="#13-transformer-architectures">1.3. Transformer architectures</a></li><li><a href="#14-comments">1.4. Comments</a></li></ul></li></ul>
                 <hr>
-                <ul class="nav-list"><li class="nav-list-item"><a href="/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/" class="nav-list-link">Generalization and Gradient Descent</a></li><li class="nav-list-item"><a href="/blog-just-the-docs/notes/navstruct/" class="nav-list-link">Navigation Structure</a></li><li class="nav-list-item active"><a href="/blog-just-the-docs/notes/2022-09-12-transformers/" class="nav-list-link active">Transformers and HPC</a></li><li class="nav-list-item"><a href="/blog-just-the-docs/notes/2022-09-02-welcome-to-jekyll/" class="nav-list-link">Welcome to Jekyll!</a></li></ul>
+                <ul class="nav-list"><li class="nav-list-item"><a href="/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/" class="nav-list-link">Generalization and Gradient Descent</a></li><li class="nav-list-item active"><a href="/blog-just-the-docs/notes/2022-09-12-Transformers/" class="nav-list-link active">Transformers and HPC</a></li></ul>
     </nav>
       <footer class="site-footer">
         This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
@@ -100,25 +100,40 @@
     </div>
     <div id="main-content-wrap" class="main-content-wrap">
       <div id="main-content" class="main-content" role="main">
-          <ul>
-  <li><a href="2022-09-12-transformers#1-presentation-outline">1. Presentation Outline</a>
-    <ul>
-      <li><a href="2022-09-12-transformers#11-background-on-transformers">1.1. Background on Transformers</a>
-        <ul>
-          <li><a href="2022-09-12-transformers#111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1">1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)</a></li>
-          <li><a href="2022-09-12-transformers#112-useful-info">1.1.2. Useful info</a>
-            <ul>
-              <li><a href="2022-09-12-transformers#1121-softmax">1.1.2.1. Softmax</a></li>
-            </ul>
+          <div class="t">Transformers and HPC</div>
+<details open="">
+  <summary class="text-delta">
+    Table of contents
+  </summary>
+<ol id="markdown-toc">
+  <li><a href="#1-presentation-outline" id="markdown-toc-1-presentation-outline">1. Presentation Outline</a>    <ol>
+      <li><a href="#11-background-on-transformers" id="markdown-toc-11-background-on-transformers">1.1. Background on Transformers</a>        <ol>
+          <li><a href="#111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1" id="markdown-toc-111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1">1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)</a></li>
+          <li><a href="#112-useful-info" id="markdown-toc-112-useful-info">1.1.2. Useful info</a>            <ol>
+              <li><a href="#1121-softmax" id="markdown-toc-1121-softmax">1.1.2.1. Softmax</a></li>
+            </ol>
           </li>
-        </ul>
+        </ol>
       </li>
-      <li><a href="2022-09-12-transformers#12-workflow-for-aayn-model">1.2. Workflow for AAYN model</a></li>
-      <li><a href="2022-09-12-transformers#13-transformer-architectures">1.3. Transformer architectures</a></li>
-      <li><a href="2022-09-12-transformers#14-comments">1.4. Comments</a></li>
-    </ul>
+      <li><a href="#12-workflow-for-aayn-model" id="markdown-toc-12-workflow-for-aayn-model">1.2. Workflow for AAYN model</a></li>
+      <li><a href="#13-transformer-architectures" id="markdown-toc-13-transformer-architectures">1.3. Transformer architectures</a></li>
+      <li><a href="#14-comments" id="markdown-toc-14-comments">1.4. Comments</a></li>
+    </ol>
   </li>
-</ul>
+</ol>
+</details>
+<details>
+  <summary>
+  </summary>
+- [1. Presentation Outline](#1-presentation-outline)
+  - [1.1. Background on Transformers](#11-background-on-transformers)
+    - [1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)](#111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1)
+    - [1.1.2. Useful info](#112-useful-info)
+      - [1.1.2.1. Softmax](#1121-softmax)
+  - [1.2. Workflow for AAYN model](#12-workflow-for-aayn-model)
+  - [1.3. Transformer architectures](#13-transformer-architectures)
+  - [1.4. Comments](#14-comments)
+</details>
       <h1 id="1-presentation-outline">
           <a href="#1-presentation-outline" class="anchor-heading" aria-labelledby="1-presentation-outline"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. Presentation Outline
       </h1>

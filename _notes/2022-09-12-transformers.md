@@ -5,14 +5,32 @@ date: 2022-09-12 03:24:42 +0100
 mathjax: true
 ---
 
-- [1. Presentation Outline](2022-09-12-transformers#1-presentation-outline)
-  - [1.1. Background on Transformers](2022-09-12-transformers#11-background-on-transformers)
-    - [1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)](2022-09-12-transformers#111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1)
-    - [1.1.2. Useful info](2022-09-12-transformers#112-useful-info)
-      - [1.1.2.1. Softmax](2022-09-12-transformers#1121-softmax)
-  - [1.2. Workflow for AAYN model](2022-09-12-transformers#12-workflow-for-aayn-model)
-  - [1.3. Transformer architectures](2022-09-12-transformers#13-transformer-architectures)
-  - [1.4. Comments](2022-09-12-transformers#14-comments)
+<div class="t">Transformers and HPC</div>
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+
+</details>
+
+<details>
+  <summary>
+  </summary>
+
+- [1. Presentation Outline](#1-presentation-outline)
+  - [1.1. Background on Transformers](#11-background-on-transformers)
+    - [1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)](#111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1)
+    - [1.1.2. Useful info](#112-useful-info)
+      - [1.1.2.1. Softmax](#1121-softmax)
+  - [1.2. Workflow for AAYN model](#12-workflow-for-aayn-model)
+  - [1.3. Transformer architectures](#13-transformer-architectures)
+  - [1.4. Comments](#14-comments)
+
+</details>
 
 # 1. Presentation Outline
 

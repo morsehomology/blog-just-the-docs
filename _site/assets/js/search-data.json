@@ -1,86 +1,62 @@
 {"0": {
     "doc": "Generalization and Gradient Descent",
-    "title": "Generalization and Gradient Descent",
-    "content": ". | Generalization and Gradient Descent . | “Bias Variance” exposition . | Version/Attempt 1 | . | From Ben Recht slides | . | . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#generalization-and-gradient-descent",
-    "relUrl": "/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#generalization-and-gradient-descent"
+    "title": "1. “Bias Variance” exposition",
+    "content": "Daniela Witten says the tradeoff is related to the equation . \\[\\text{Exp. Pred. Error }=\\text{ Irreducible Error + Bias}^2+ \\text{Var}\\] There will be different frameworks for this, we’re going to try to start with as little structure as possible if we can. ",
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#1-bias-variance-exposition",
+    "relUrl": "/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#1-bias-variance-exposition"
   },"1": {
     "doc": "Generalization and Gradient Descent",
-    "title": "“Bias Variance” exposition",
-    "content": "Daniela Witten says the tradeoff is related to the equation . \\[\\text{Exp. Pred. Error }=\\text{ Irreducible Error + Bias}^2+ \\text{Var}\\] There will be different frameworks for this, we’re going to try to start with as little structure as possible if we can. Version/Attempt 1 . (I have reasons to think this version can’t be correct, doesn’t have some features of the problem which seemed essential. We want to see that though). Have a space $X$ and the data is determined by a distribution $\\rho$ on $X$. A model (fit) is another distribution $\\rho’$ on $X$. For now we meed to assume that $X$ has a fixed metric $d$ and furthermore that means/centers of mass are defined for $\\rho$ and $\\rho’$, call these $x_{\\rho}$ and $x_{\\rho’}$ in $X$. (They should be defined by minimizing $E_{\\rho}[d(x_{\\rho}, x)]$ over all of $X$, and likewise for $\\rho’$). The variance of . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#bias-variance-exposition",
-    "relUrl": "/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#bias-variance-exposition"
+    "title": "1.1. Version/Attempt 1",
+    "content": "(I have reasons to think this version can’t be correct, doesn’t have some features of the problem which seemed essential. We want to see that though). Have a space $X$ and the data is determined by a distribution $\\rho$ on $X$. A model (fit) is another distribution $\\rho’$ on $X$. For now we meed to assume that $X$ has a fixed metric $d$ and furthermore that means/centers of mass are defined for $\\rho$ and $\\rho’$, call these $x_{\\rho}$ and $x_{\\rho’}$ in $X$. (They should be defined by minimizing $E_{\\rho}[d(x_{\\rho}, x)]$ over all of $X$, and likewise for $\\rho’$). The variance of . ",
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#11-versionattempt-1",
+    "relUrl": "/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#11-versionattempt-1"
   },"2": {
     "doc": "Generalization and Gradient Descent",
-    "title": "From Ben Recht slides",
+    "title": "2. From Ben Recht slides",
     "content": "Given: i.i.d. sample \\(S=\\left\\{z_1, \\ldots, z_n\\right\\}\\) from distribution $D$ Goal: Find a good predictor function $f$ Population risk (test error): \\(R[f]=\\mathbb{E}_z \\operatorname{loss}(f ; z)\\) Unknown! Empirical risk (training error): \\(R_s[f]=\\frac{1}{n} \\sum_{i=1}^n \\operatorname{loss}\\left(f ; z_i\\right)\\) Minimize using SGD! Generalization error: $R[f]-R_s[f]$ . How much empirical risk underestimates population risk . We can compute $R_s \\ldots$: . “Fundamental theorem of ML:” . \\[R[f]=\\left(R[f]-R_S[f]\\right)+R_S[f]\\] population generalization training - small training error implies risk ± generalization error - zero training error does not imply overfitting \\(\\begin{aligned} R[f] &amp;=\\left(R[f]-R\\left[f_{\\mathcal{H}}\\right]\\right) \\\\ &amp;+\\left(R\\left[f_{\\mathcal{H}}\\right]-R\\left[f_{\\star}\\right]\\right) \\\\ &amp;+R\\left[f_{\\star}\\right] \\end{aligned}\\) . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#from-ben-recht-slides",
-    "relUrl": "/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#from-ben-recht-slides"
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#2-from-ben-recht-slides",
+    "relUrl": "/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/#2-from-ben-recht-slides"
   },"3": {
     "doc": "Generalization and Gradient Descent",
     "title": "Generalization and Gradient Descent",
-    "content": " ",
+    "content": "Generalization and Gradient Descent . | 1. “Bias Variance” exposition . | 1.1. Version/Attempt 1 | . | 2. From Ben Recht slides | . ",
     "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/",
     "relUrl": "/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/"
   },"4": {
-    "doc": "Welcome to Jekyll!",
-    "title": "Welcome to Jekyll!",
-    "content": "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Jekyll requires blog post files to be named according to the following format: . YEAR-MONTH-DAY-title.MARKUP . Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for code snippets: . def print_hi(name) puts \"Hi, #{name}\" end print_hi('Tom') #=&gt; prints 'Hi, Tom' to STDOUT. Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk. ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-02-welcome-to-jekyll/",
-    "relUrl": "/notes/2022-09-02-welcome-to-jekyll/"
-  },"5": {
     "doc": "Transformers and HPC",
     "title": "1. Presentation Outline",
     "content": " ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-transformers/#1-presentation-outline",
-    "relUrl": "/notes/2022-09-12-transformers/#1-presentation-outline"
-  },"6": {
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#1-presentation-outline",
+    "relUrl": "/notes/2022-09-12-Transformers/#1-presentation-outline"
+  },"5": {
     "doc": "Transformers and HPC",
     "title": "1.1. Background on Transformers",
     "content": "1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1) . Here, each network will represent a function $f: X \\to X’$, where $X$ and $X’$ denote the spaces of input and output sequences, respectively. More specifically, let $T, T’$ denote the spaces of input and output tokens, and let $I$ denote the index set (need to elaborate on the structure of $I$). Then . \\[X = \\{I \\to T\\}\\] and . \\[X' = \\{I \\to T'\\}\\] Let $M = {X \\to X’}$ denote the space of all sequence-to-sequence mappings. 1.1.2. Useful info . 1.1.2.1. Softmax . Softmax function $\\rho: \\R^n \\to \\R^n$, . \\[\\rho\\left(x_i\\right)=\\frac{\\exp \\left(x_i\\right)}{\\sum_j \\exp \\left(x_j\\right)}\\] Possible ways to think about it: . | Define $\\rho_t$ by | . \\[\\rho_t\\left(x_i\\right)=\\frac{\\exp \\left(t x_i\\right)}{\\sum_j \\exp \\left(t x_j\\right)}\\] for $t\\in \\R^+$. ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-transformers/#11-background-on-transformers",
-    "relUrl": "/notes/2022-09-12-transformers/#11-background-on-transformers"
-  },"7": {
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#11-background-on-transformers",
+    "relUrl": "/notes/2022-09-12-Transformers/#11-background-on-transformers"
+  },"6": {
     "doc": "Transformers and HPC",
     "title": "1.2. Workflow for AAYN model",
     "content": ". | Inputs come in as a sequence of tokens 2. | . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-transformers/#12-workflow-for-aayn-model",
-    "relUrl": "/notes/2022-09-12-transformers/#12-workflow-for-aayn-model"
-  },"8": {
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#12-workflow-for-aayn-model",
+    "relUrl": "/notes/2022-09-12-Transformers/#12-workflow-for-aayn-model"
+  },"7": {
     "doc": "Transformers and HPC",
     "title": "1.3. Transformer architectures",
     "content": "References: . What defines a transformer? What are its important properties, how does it differ from other kinds of architectures (and what are the current views of the effects of these differences?) . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-transformers/#13-transformer-architectures",
-    "relUrl": "/notes/2022-09-12-transformers/#13-transformer-architectures"
-  },"9": {
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#13-transformer-architectures",
+    "relUrl": "/notes/2022-09-12-Transformers/#13-transformer-architectures"
+  },"8": {
     "doc": "Transformers and HPC",
     "title": "1.4. Comments",
     "content": "| Comments: | ——— | . | Is there any interesting way to relate some of these transformer vs RNN ideas to the distinc | . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-transformers/#14-comments",
-    "relUrl": "/notes/2022-09-12-transformers/#14-comments"
-  },"10": {
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#14-comments",
+    "relUrl": "/notes/2022-09-12-Transformers/#14-comments"
+  },"9": {
     "doc": "Transformers and HPC",
     "title": "Transformers and HPC",
-    "content": ". | 1. Presentation Outline . | 1.1. Background on Transformers . | 1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1) | 1.1.2. Useful info . | 1.1.2.1. Softmax | . | . | 1.2. Workflow for AAYN model | 1.3. Transformer architectures | 1.4. Comments | . | . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-transformers/",
-    "relUrl": "/notes/2022-09-12-transformers/"
-  },"11": {
-    "doc": "Navigation Structure",
-    "title": "Navigation Structure",
-    "content": ". | Main navigation | In-page navigation with Table of Contents . | Example | Collapsible Table of Contents | . | . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/navstruct/",
-    "relUrl": "/notes/navstruct/"
-  },"12": {
-    "doc": "Navigation Structure",
-    "title": "Main navigation",
-    "content": "The main navigation for your Just the Docs site is on the left side of the page at large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren). By default, all pages will appear as top level pages in the main nav unless a parent page is defined (see Pages with Children). ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/navstruct/#main-navigation",
-    "relUrl": "/notes/navstruct/#main-navigation"
-  },"13": {
-    "doc": "Navigation Structure",
-    "title": "In-page navigation with Table of Contents",
-    "content": "To generate a Table of Contents on your docs pages, you can use the {:toc} method from Kramdown, immediately after an &lt;ol&gt; in Markdown. This will automatically generate an ordered list of anchor links to various sections of the page based on headings and heading levels. There may be occasions where you’re using a heading and you don’t want it to show up in the TOC, so to skip a particular heading use the {: .no_toc } CSS class. Example . # Navigation Structure {: .no_toc } ## {: .no_toc .text-delta } 1. TOC {:toc} . This example skips the page name heading (#) from the TOC, as well as the heading for the Table of Contents itself (##) because it is redundant, followed by the table of contents itself. To get an unordered list, replace 1. TOC above by - TOC. Collapsible Table of Contents . The Table of Contents can be made collapsible using the &lt;details&gt; and &lt;summary&gt; elements , as in the following example. The attribute open (expands the Table of Contents by default) and the styling with {: .text-delta } are optional. &lt;details open markdown=\"block\"&gt; &lt;summary&gt; &lt;/summary&gt; {: .text-delta } 1. TOC {:toc} &lt;/details&gt; . The result is shown at the top of this page ({:toc} can be used only once on each page). ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/navstruct/#in-page-navigation-with-table-of-contents",
-    "relUrl": "/notes/navstruct/#in-page-navigation-with-table-of-contents"
+    "content": "Transformers and HPC . | 1. Presentation Outline . | 1.1. Background on Transformers . | 1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1) | 1.1.2. Useful info . | 1.1.2.1. Softmax | . | . | 1.2. Workflow for AAYN model | 1.3. Transformer architectures | 1.4. Comments | . | . - [1. Presentation Outline](#1-presentation-outline) - [1.1. Background on Transformers](#11-background-on-transformers) - [1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)](#111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1) - [1.1.2. Useful info](#112-useful-info) - [1.1.2.1. Softmax](#1121-softmax) - [1.2. Workflow for AAYN model](#12-workflow-for-aayn-model) - [1.3. Transformer architectures](#13-transformer-architectures) - [1.4. Comments](#14-comments) ",
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/",
+    "relUrl": "/notes/2022-09-12-Transformers/"
   }
 }
