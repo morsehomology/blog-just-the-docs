@@ -2,23 +2,23 @@
 layout: post
 title: Generalization and Gradient Descent
 mathjax: true
-toc: true
+toc: false
 ---
 
 <!-- {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %} -->
 
 <div class="t">Generalization and Gradient Descent</div>
 
-<details open markdown="block">
+<!-- <details open markdown="block">
   <summary>
     Table of contents
   </summary>
   {: .text-delta }
 1. TOC
 {:toc}
-</details>
+</details> -->
 
----
+<!-- --- -->
 
 # 1. "Bias Variance" exposition
 

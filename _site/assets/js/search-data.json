@@ -19,7 +19,7 @@
   },"3": {
     "doc": "Generalization and Gradient Descent",
     "title": "Generalization and Gradient Descent",
-    "content": "Generalization and Gradient Descent . | 1. “Bias Variance” exposition . | 1.1. Version/Attempt 1 | . | 2. From Ben Recht slides | . ",
+    "content": "Generalization and Gradient Descent ",
     "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/",
     "relUrl": "/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/"
   },"4": {
