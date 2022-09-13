@@ -24,38 +24,44 @@
     "relUrl": "/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/"
   },"4": {
     "doc": "Transformers and HPC",
-    "title": "1. Presentation Outline",
+    "title": "1. Background on Transformers",
     "content": " ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#1-presentation-outline",
-    "relUrl": "/notes/2022-09-12-Transformers/#1-presentation-outline"
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#1-background-on-transformers",
+    "relUrl": "/notes/2022-09-12-Transformers/#1-background-on-transformers"
   },"5": {
     "doc": "Transformers and HPC",
-    "title": "1.1. Background on Transformers",
-    "content": "1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1) . Here, each network will represent a function $f: X \\to X’$, where $X$ and $X’$ denote the spaces of input and output sequences, respectively. More specifically, let $T, T’$ denote the spaces of input and output tokens, and let $I$ denote the index set (need to elaborate on the structure of $I$). Then . \\[X = \\{I \\to T\\}\\] and . \\[X' = \\{I \\to T'\\}\\] Let $M = {X \\to X’}$ denote the space of all sequence-to-sequence mappings. 1.1.2. Useful info . 1.1.2.1. Softmax . Softmax function $\\rho: \\R^n \\to \\R^n$, . \\[\\rho\\left(x_i\\right)=\\frac{\\exp \\left(x_i\\right)}{\\sum_j \\exp \\left(x_j\\right)}\\] Possible ways to think about it: . | Define $\\rho_t$ by | . \\[\\rho_t\\left(x_i\\right)=\\frac{\\exp \\left(t x_i\\right)}{\\sum_j \\exp \\left(t x_j\\right)}\\] for $t\\in \\R^+$. ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#11-background-on-transformers",
-    "relUrl": "/notes/2022-09-12-Transformers/#11-background-on-transformers"
+    "title": "1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)",
+    "content": "Here, each network will represent a function $f: X \\to X’$, where $X$ and $X’$ denote the spaces of input and output sequences, respectively. More specifically, let $T, T’$ denote the spaces of input and output tokens, and let $I$ denote the index set (need to elaborate on the structure of $I$). Then . \\[X = \\{I \\to T\\}\\] and . \\[X' = \\{I \\to T'\\}\\] Let $M = {X \\to X’}$ denote the space of all sequence-to-sequence mappings. ",
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#11-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1",
+    "relUrl": "/notes/2022-09-12-Transformers/#11-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1"
   },"6": {
     "doc": "Transformers and HPC",
-    "title": "1.2. Workflow for AAYN model",
-    "content": ". | Inputs come in as a sequence of tokens 2. | . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#12-workflow-for-aayn-model",
-    "relUrl": "/notes/2022-09-12-Transformers/#12-workflow-for-aayn-model"
+    "title": "1.2. Useful info",
+    "content": "1.2.1. Softmax . Softmax function $\\rho: \\R^n \\to \\R^n$, . \\[\\rho\\left(x_i\\right)=\\frac{\\exp \\left(x_i\\right)}{\\sum_j \\exp \\left(x_j\\right)}\\] Possible ways to think about it: . | Define $\\rho_t$ by | . \\[\\rho_t\\left(x_i\\right)=\\frac{\\exp \\left(t x_i\\right)}{\\sum_j \\exp \\left(t x_j\\right)}\\] for $t\\in \\R^+$. ",
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#12-useful-info",
+    "relUrl": "/notes/2022-09-12-Transformers/#12-useful-info"
   },"7": {
     "doc": "Transformers and HPC",
-    "title": "1.3. Transformer architectures",
-    "content": "References: . What defines a transformer? What are its important properties, how does it differ from other kinds of architectures (and what are the current views of the effects of these differences?) . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#13-transformer-architectures",
-    "relUrl": "/notes/2022-09-12-Transformers/#13-transformer-architectures"
+    "title": "2. Workflow for AAYN model",
+    "content": ". | Inputs come in as a sequence of tokens 2. | . ",
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#2-workflow-for-aayn-model",
+    "relUrl": "/notes/2022-09-12-Transformers/#2-workflow-for-aayn-model"
   },"8": {
     "doc": "Transformers and HPC",
-    "title": "1.4. Comments",
-    "content": "| Comments: | ——— | . | Is there any interesting way to relate some of these transformer vs RNN ideas to the distinc | . ",
-    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#14-comments",
-    "relUrl": "/notes/2022-09-12-Transformers/#14-comments"
+    "title": "3. Transformer architectures",
+    "content": "References: . What defines a transformer? What are its important properties, how does it differ from other kinds of architectures (and what are the current views of the effects of these differences?) . ",
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#3-transformer-architectures",
+    "relUrl": "/notes/2022-09-12-Transformers/#3-transformer-architectures"
   },"9": {
     "doc": "Transformers and HPC",
+    "title": "4. Comments",
+    "content": "| Comments: | ——— | . | Is there any interesting way to relate some of these transformer vs RNN ideas to the distinc | . ",
+    "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#4-comments",
+    "relUrl": "/notes/2022-09-12-Transformers/#4-comments"
+  },"10": {
+    "doc": "Transformers and HPC",
     "title": "Transformers and HPC",
-    "content": "- [1. Presentation Outline](#1-presentation-outline) - [1.1. Background on Transformers](#11-background-on-transformers) - [1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)](#111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1) - [1.1.2. Useful info](#112-useful-info) - [1.1.2.1. Softmax](#1121-softmax) - [1.2. Workflow for AAYN model](#12-workflow-for-aayn-model) - [1.3. Transformer architectures](#13-transformer-architectures) - [1.4. Comments](#14-comments) ",
+    "content": "- [1. Background on Transformers](#1-background-on-transformers) - [1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)](#11-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1) - [1.2. Useful info](#12-useful-info) - [1.2.1. Softmax](#121-softmax) - [2. Workflow for AAYN model](#2-workflow-for-aayn-model) - [3. Transformer architectures](#3-transformer-architectures) - [4. Comments](#4-comments) ",
     "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/",
     "relUrl": "/notes/2022-09-12-Transformers/"
   }

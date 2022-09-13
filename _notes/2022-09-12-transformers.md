@@ -9,22 +9,19 @@ mathjax: true
   <summary>
   </summary>
 
-- [1. Presentation Outline](#1-presentation-outline)
-  - [1.1. Background on Transformers](#11-background-on-transformers)
-    - [1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)](#111-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1)
-    - [1.1.2. Useful info](#112-useful-info)
-      - [1.1.2.1. Softmax](#1121-softmax)
-  - [1.2. Workflow for AAYN model](#12-workflow-for-aayn-model)
-  - [1.3. Transformer architectures](#13-transformer-architectures)
-  - [1.4. Comments](#14-comments)
+- [1. Background on Transformers](#1-background-on-transformers)
+  - [1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)](#11-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1)
+  - [1.2. Useful info](#12-useful-info)
+    - [1.2.1. Softmax](#121-softmax)
+- [2. Workflow for AAYN model](#2-workflow-for-aayn-model)
+- [3. Transformer architectures](#3-transformer-architectures)
+- [4. Comments](#4-comments)
 
 </details>
 
-# 1. Presentation Outline
+# 1. Background on Transformers
 
-## 1.1. Background on Transformers
-
-### 1.1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)
+## 1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)
 
 Here, each network will represent a function $f: X \to X'$, where $X$ and $X'$ denote the spaces of input and output sequences, respectively.
 
@@ -42,9 +39,9 @@ $$
 
 Let $M = \{X \to X'\}$ denote the space of all sequence-to-sequence mappings.
 
-### 1.1.2. Useful info
+## 1.2. Useful info
 
-#### 1.1.2.1. Softmax
+### 1.2.1. Softmax
 
 Softmax function $\rho: \R^n \to \R^n$,
 
@@ -62,18 +59,18 @@ $$
 
 for $t\in \R^+$.
 
-## 1.2. Workflow for AAYN model
+# 2. Workflow for AAYN model
 
 1. Inputs come in as a sequence of tokens
 2.
 
-## 1.3. Transformer architectures
+# 3. Transformer architectures
 
 References:
 
 What defines a transformer? What are its important properties, how does it differ from other kinds of architectures (and what are the current views of the effects of these differences?)
 
-## 1.4. Comments
+# 4. Comments
 
 | Comments: |
 | --------- |
