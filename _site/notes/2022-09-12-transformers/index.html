@@ -86,7 +86,7 @@
                   <!-- <b>Contents</b> -->
                   <b>Table of Contents</b>
                 </summary>
-                <ul class="inline_toc" id="my_toc"><li><a href="#1-background-on-transformers">1. Background on Transformers</a><ul><li><a href="#11-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1">1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)</a></li><li><a href="#12-useful-info">1.2. Useful info</a><ul><li><a href="#121-softmax">1.2.1. Softmax</a></li></ul></li></ul></li><li><a href="#2-workflow-for-aayn-model">2. Workflow for AAYN model</a></li><li><a href="#3-transformer-architectures">3. Transformer architectures</a></li><li><a href="#4-comments">4. Comments</a></li></ul>
+                <ul class="inline_toc" id="my_toc"><li><a href="#1-background-on-transformers">1. Background on Transformers</a><ul><li><a href="#11-transformers-vs-rnns-motivation-1">1.1. Transformers vs. RNN’s (Motivation 1)</a></li><li><a href="#12-useful-info">1.2. Useful info</a><ul><li><a href="#121-softmax">1.2.1. Softmax</a></li></ul></li></ul></li><li><a href="#2-workflow-for-aayn-model">2. Workflow for AAYN model</a></li><li><a href="#3-transformer-architectures">3. Transformer architectures</a></li><li><a href="#4-comments">4. Comments</a></li></ul>
             </details>
                 <hr>
                 <ul class="nav-list"><li class="nav-list-item"><a href="/blog-just-the-docs/notes/2022-09-02-Generalization%20and%20Gradient%20Descent/" class="nav-list-link">Generalization and Gradient Descent</a></li><li class="nav-list-item active"><a href="/blog-just-the-docs/notes/2022-09-12-Transformers/" class="nav-list-link active">Transformers and HPC</a></li></ul>
@@ -111,7 +111,7 @@
   <summary>
   </summary>
 - [1. Background on Transformers](#1-background-on-transformers)
-  - [1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)](#11-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1)
+  - [1.1. Transformers vs. RNN's (Motivation 1)](#11-transformers-vs-rnns-motivation-1)
   - [1.2. Useful info](#12-useful-info)
     - [1.2.1. Softmax](#121-softmax)
 - [2. Workflow for AAYN model](#2-workflow-for-aayn-model)
@@ -121,9 +121,10 @@
       <h1 id="1-background-on-transformers">
           <a href="#1-background-on-transformers" class="anchor-heading" aria-labelledby="1-background-on-transformers"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. Background on Transformers
       </h1>
-      <h2 id="11-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1">
-          <a href="#11-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1" class="anchor-heading" aria-labelledby="11-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)
+      <h2 id="11-transformers-vs-rnns-motivation-1">
+          <a href="#11-transformers-vs-rnns-motivation-1" class="anchor-heading" aria-labelledby="11-transformers-vs-rnns-motivation-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1.1. Transformers vs. RNN’s (Motivation 1)
       </h2>
+<p><strong>Idea:</strong> Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation</p>
 <p>Here, each network will represent a function $f: X \to X’$, where $X$ and $X’$ denote the spaces of input and output sequences, respectively.</p>
 <p>More specifically, let $T, T’$ denote the spaces of input and output tokens, and let $I$ denote the index set (need to elaborate on the structure of $I$). Then</p>
 \[X = \{I \to T\}\]

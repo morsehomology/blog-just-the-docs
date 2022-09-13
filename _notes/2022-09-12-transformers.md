@@ -10,7 +10,7 @@ mathjax: true
   </summary>
 
 - [1. Background on Transformers](#1-background-on-transformers)
-  - [1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)](#11-framing-transformers-as-an-alternative-to-rnns-for-sequence-to-sequence-mapping-eg-for-translation-idea-1)
+  - [1.1. Transformers vs. RNN's (Motivation 1)](#11-transformers-vs-rnns-motivation-1)
   - [1.2. Useful info](#12-useful-info)
     - [1.2.1. Softmax](#121-softmax)
 - [2. Workflow for AAYN model](#2-workflow-for-aayn-model)
@@ -21,7 +21,9 @@ mathjax: true
 
 # 1. Background on Transformers
 
-## 1.1. Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation (Idea 1)
+## 1.1. Transformers vs. RNN's (Motivation 1)
+
+**Idea:** Framing transformers as an alternative to RNN’s for “sequence-to-sequence” mapping, e.g., for translation
 
 Here, each network will represent a function $f: X \to X'$, where $X$ and $X'$ denote the spaces of input and output sequences, respectively.
 
