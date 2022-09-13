@@ -43,7 +43,7 @@
   },"7": {
     "doc": "Transformers and HPC",
     "title": "2. Workflow for AAYN model",
-    "content": ". | Inputs come in as a sequence of tokens 2. | . ",
+    "content": ". | Inputs come in as a sequence of tokensfdas | fda | . ",
     "url": "http://localhost:4000/blog-just-the-docs/notes/2022-09-12-Transformers/#2-workflow-for-aayn-model",
     "relUrl": "/notes/2022-09-12-Transformers/#2-workflow-for-aayn-model"
   },"8": {

@@ -63,8 +63,8 @@ for $t\in \R^+$.
 
 # 2. Workflow for AAYN model
 
-1. Inputs come in as a sequence of tokens
-2.
+1. Inputs come in as a sequence of tokensfdas
+2. fda
 
 # 3. Transformer architectures
 
