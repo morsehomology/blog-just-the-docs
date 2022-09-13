@@ -5,18 +5,6 @@ date: 2022-09-12 03:24:42 +0100
 mathjax: true
 ---
 
-<div class="t">Transformers and HPC</div>
-
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-
-</details>
-
 <details>
   <summary>
   </summary>
